@@ -1,0 +1,127 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #444;
+  font: 14px Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 1400px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.description {
+  padding: 0 20px 20px 20px;
+  margin: 30px;
+  font-size: 1.1em;
+}
+
+#button {
+  padding: 20px;
+  margin: 30px auto;
+  border: aqua;
+  box-shadow: 5px 5px 15px #151544;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.mytable {
+  margin: 10px;
+  border: 1px dotted #151544;
+  background: #fff;
+}
+.mytable td,
+.mytable th {
+  padding: 5px;
+  border: 1px dotted #151544;
+}
+.mytable th {
+  background-color: #d5f2ff;
+  font-weight: 600;
+}
+.mytable .active {
+  background-color: #e9e9e9;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__dialog {
+  max-width: 80vw;
+  height: 90vh;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+}
+.modal__body {
+  max-height: 80vh;
+  padding: 0px 10px;
+  overflow-y: auto;
+  font-family: "Montserrat", sans-serif;
+}
+.modal__table {
+  background: #9090ed95;
+  overflow: auto;
+}
+.modal__sort {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #9090ed95;
+  padding: 25px 0 20px;
+  gap: 25px;
+}
+.modal__sort-item {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: center;
+  align-content: center;
+}
+.modal__sort-label {
+  width: 100px;
+}
+.modal__sort-select {
+  height: 25px;
+  margin-left: 5px;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Генератор таблиц</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="description">
+        <h1>Тестовое задание BIMEND</h1>
+        <p><b>инженер программист на работу с веб интерфесами</b></p>
+
+        <p> Вам предлагается средствами JavaScript сделать модальное окно, в котором будет две зоны:</p>
+        <ul>
+            <li>Зона фильтра - тут для каждого поля (столбца) таблицы выводятся lable и select, в котором выбираются
+                уникальные значения выбранного поля </li>
+            <li>Зона таблицы - просто красиво выводится вся таблица. Если она будет еще и с работающим пагинатором, то
+                это огромный плюс </li>
+        </ul>
+        <p>У вас есть генератор таблиц в этом коде со случайными данными (генерируется объект с ключами headers и data).
+            Вам необходимо, чтобы по кнопке вызывалось модальное окно, в котором бы пришедшие данные автоматом
+            раскидывались бы на две области.</p>
+        <p>Мы хотим увидить красивое решение в коде и красивый интерфейс</p>
+        <p>Видео, показывающее часть наработок и с чем вам придется столкнуться, можно посмотреть <a
+                href="https://cloud.mail.ru/public/e9AE/cHFCxBSTm" title="Bimend ноябрь 2021">ТУТ</a></p>
+        <p><b>Ограничения: нет jquery, bootstrap или что-то подобное. Только голый javaScript свой CSS (можно sass). Вам
+                НЕ НУЖНО связывать фильтры и таблицу.</b></p>
+        <p>Если вы сможете с этим справиться, то, скорее всего, процентов 95, что попадете в нашу команду</p>
+        <p>Решение жду на dmitrii.shulepov@bimend.org</p>
+
+    </div>
+    <div id="button">Генерация таблицы</div>
+    <div class="modal" id="modal">
+        <div class="modal__dialog">
+            <div class="modal__header">
+                <div class="modal__title">title</div>
+                <button class="js-modal-close">X</button>
+            </div>
+            <div class="modal__body">
+                <div class="modal__table"></div>
+            </div>
+            <div class="modal__footer"></div>
+        </div>
+    </div>
+    <div id="genTable"></div>
+</body>
+<script src="js/main.js" type="module"></script>
+
+</html>
